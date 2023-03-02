@@ -20,7 +20,7 @@ class ForumPostController extends Controller
     public function index()
     {
         $forums = ForumPost::all();
-        return view('forum.index', ['forums'=>$forums]);
+        return view('forum.index',  ['forums' => DB::table('forum_posts')->paginate(5)]);
         //return $forums[0]->title;
     }
 

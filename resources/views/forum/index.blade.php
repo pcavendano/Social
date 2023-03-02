@@ -147,6 +147,16 @@
                     </div>
                 </div>
             </div>
+            <div class="row g-0 align-items-center pb-4">
+                <div class="col-sm-6 col-lg-10">
+                    <div><p class="mb-sm-0">{{ $forums->total()}} résultats</p></div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="float-sm-end">
+                        {{ $forums->links() }}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
